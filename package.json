@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "browserify client/public/*.js -t babelify -o server/public/bundle.js",
     "bundle:watch": "watchify client/public/*.js -vd -t babelify -o server/public/bundle.js",
-    "watch": "nodemon index.js"
+    "watch": "nodemon client/index.js"
   },
   "repository": {
     "type": "git",
