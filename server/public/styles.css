@@ -1,3 +1,22 @@
 li {
   list-style: none;
 }
+
+button {
+  cursor: pointer;
+  margin: 0.5%;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  border: 2px solid #ed837d;
+  box-shadow:
+    1px 0 #ea6861,
+    0 1px #ea6861,
+    2px 1px #ea6861,
+    1px 2px #da4e4a,
+    3px 2px #da4e4a,
+    2px 3px #da4e4a,
+    3px 3px #9b4142,
+    4px 4px #9b4142,
+    5px 5px 1px #000;
+}
