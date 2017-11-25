@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Pads = ({ list }) => {
+const Pads = ({ renderRows }) => {
   return (
-    <div>
-      {list.map((number, index) => <button key={index}></button>)}
+    <div className="pads">
+      {renderRows()}
     </div>
   )
 }
