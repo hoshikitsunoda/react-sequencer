@@ -10,12 +10,17 @@ class App extends Component {
     this.row = [1,2,3,4,5,6,7,8,9,10,11,12]
     this.sound = [sound1]
     this.renderRows = this.renderRows.bind(this)
+    this.playNote = this.playNote.bind(this)
+  }
+
+  playNote(sound) {
+    return sound.play()
   }
 
   renderRows() {
     return (
       <div className="paddies">
-        {this.list.map((number, index) => <button key={index}></button>)}
+        {this.list.map((number, index) => <button onClick={this.playNote} key={index}></button>)}
       </div>
     )
   }
