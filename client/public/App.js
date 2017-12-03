@@ -7,6 +7,10 @@ class App extends Component {
     super(props)
   }
 
+  clicked() {
+    console.log('click')
+  }
+
   render() {
     return (
       <div>
