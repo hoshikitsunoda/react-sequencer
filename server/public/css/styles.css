@@ -42,7 +42,7 @@ button {
 .notes {
   position: relative;
   top: -30px;
-  left: -18px;
+  left: -20px;
   width: 60%;
   height: 25px;
   float: left;
@@ -68,6 +68,14 @@ button {
     2px 2px #454222,
     2px 2px #454222,
     4px 4px 2px #000;
+}
+
+#KD-note,
+#SD-note,
+#HH-note,
+#CL-note,
+#SH-note {
+  font-size: 15px;
 }
 
 .rows {
