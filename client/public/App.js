@@ -5,6 +5,7 @@ import Indicator from './Indicator'
 class App extends Component {
   constructor(props) {
     super(props)
+    this.clicked = this.clicked.bind(this)
   }
 
   clicked() {
