@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <Pads />
-        <Indicator />
+        <Indicator onClick={this.clicked}/>
       </div>)
   }
 }
