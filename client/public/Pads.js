@@ -1,11 +1,21 @@
 import React from 'react'
 import Pad from './Pad'
+import Indicator from './Indicator'
 
 const Pads = () => {
-  const row = [1,2,3,4,5,6,7,8,9,10,11,12]
+  const row = ['c', 'd', 'e', 'f', 'g', 'a', 'b', 'kd', 'sd', 'hh', 'cl', 'sh']
   return (
-    <div id="table">
-      {row.map((id, index) => <Pad key={index} id={id} />)}
+    <div>
+      <div id="table">
+        {row.map((id, index) => {
+         return (<div className="rows" key={index} id={id + '-row'}>
+           <Pad key={index} id={id} />
+         </div>)
+        })}
+      </div>
+      <div id="indicator">
+        <Indicator />
+      </div>
     </div>
   )
 }
