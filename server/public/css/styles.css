@@ -39,11 +39,49 @@ button {
     5px 5px 1px #000;
 }
 
+.notes {
+  position: relative;
+  top: -30px;
+  left: -18px;
+  width: 60%;
+  height: 25px;
+  float: left;
+  padding: 0 2%;
+  margin-left: 4%;
+  margin-bottom: 26%;
+  border-radius: 50%;
+  border-style: double;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  color: #585a5a;
+  text-align: center;
+  line-height: 30px;
+  background-color: #38363e;
+  opacity: 0.7;
+  box-shadow:
+    0 0 #4f4c27,
+    0 0 #4f4c27,
+    1px 1px #524e28,
+    1px 1px #524e28,
+    2px 2px #454222,
+    2px 2px #454222,
+    4px 4px 2px #000;
+}
+
 .rows {
   position: relative;
   width: 100%;
   left: 9%;
   top: 3%;
+}
+
+#indicator {
+  position: absolute;
+  width: 6%;
+  height: 80%;
+  top: 20%;
 }
 
 #table {
