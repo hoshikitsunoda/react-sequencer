@@ -25,6 +25,22 @@ class App extends Component {
     const audio = document.querySelectorAll('.notes')
     for(let i = 0; i < audio.length; i++) {
       audio[i].addEventListener('click', (event) => {
+        switch(event.target.id) {
+          case 'C-note':
+          case 'D-note':
+          case 'E-note':
+          case 'F-note':
+          case 'G-note':
+          case 'A-note':
+          case 'B-note':
+          case 'KD-note':
+          case 'SD-note':
+          case 'HH-note':
+          case 'CL-note':
+          case 'SH-note':
+          default:
+            return
+        }
       })
     }
   }
