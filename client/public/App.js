@@ -23,7 +23,10 @@ class App extends Component {
 
   clicked() {
     const audio = document.querySelectorAll('.notes')
-    play.audio()
+    for(let i = 0; i < audio.length; i++) {
+      audio[i].addEventListener('click', (event) => {
+      })
+    }
   }
 
   render() {
