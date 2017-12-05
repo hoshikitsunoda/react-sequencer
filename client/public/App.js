@@ -71,6 +71,12 @@ class App extends Component {
     }
   }
 
+  toggle(event) {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }))
+  }
+
   render() {
     return (
       <div>
