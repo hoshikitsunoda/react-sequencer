@@ -20,6 +20,7 @@ const white = { bgColor: 'white' }
 class App extends Component {
   constructor(props) {
     super(props)
+    this.toggle = this.toggle.bind
     this.clicked = this.clicked.bind(this)
   }
 
