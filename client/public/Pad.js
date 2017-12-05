@@ -6,6 +6,7 @@ class Pad extends Component {
   constructor(props) {
     super(props)
     this.state = { active: false }
+    this.handleBgColorChange = this.handleBgColorChange.bind(this)
   }
 
   handleBgColorChange() {
