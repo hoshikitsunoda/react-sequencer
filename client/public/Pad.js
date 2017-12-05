@@ -8,6 +8,11 @@ class Pad extends Component {
     this.state = { active: false }
   }
 
+  handleBgColorChange() {
+    const currentState = this.state.active
+    this.setState({ active: !currentState })
+  }
+
   render() {
     return (
       <div>
