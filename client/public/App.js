@@ -27,17 +27,41 @@ class App extends Component {
       audio[i].addEventListener('click', (event) => {
         switch(event.target.id) {
           case 'C-note':
+            sound1.play()
+            break
           case 'D-note':
+            sound2.play()
+            break
           case 'E-note':
+            sound3.play()
+            break
           case 'F-note':
+            sound4.play()
+            break
           case 'G-note':
+            sound5.play()
+            break
           case 'A-note':
+            sound6.play()
+            break
           case 'B-note':
+            sound7.play()
+            break
           case 'KD-note':
+            sound8.play()
+            break
           case 'SD-note':
+            sound9.play()
+            break
           case 'HH-note':
+            sound10.play()
+            break
           case 'CL-note':
+            sound11.play()
+            break
           case 'SH-note':
+            sound12.play()
+            break
           default:
             return
         }
