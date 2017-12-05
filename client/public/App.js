@@ -15,6 +15,8 @@ var sound10 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/
 var sound11 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/CL.mp3')
 var sound12 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/SH.mp3')
 
+const white = { bgColor: 'white' }
+
 class App extends Component {
   constructor(props) {
     super(props)
