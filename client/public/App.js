@@ -20,12 +20,10 @@ const white = { bgColor: 'white' }
 class App extends Component {
   constructor(props) {
     super(props)
-    this.state = { isToggleOn: false }
-    this.toggle = this.toggle.bind
-    this.clicked = this.clicked.bind(this)
+    this.playNote = this.playNote.bind(this)
   }
 
-  clicked() {
+  playNote() {
     const audio = document.querySelectorAll('.notes')
     for(let i = 0; i < audio.length; i++) {
       audio[i].addEventListener('click', (event) => {
@@ -73,17 +71,11 @@ class App extends Component {
     }
   }
 
-  toggle(event) {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
-    }))
-  }
-
   render() {
     return (
       <div>
-        <Pads />
-        <Indicator onClick={this.clicked}/>
+        <Pads onClick={this.playNote}/>
+        <Indicator onClick={this.playNote}/>
       </div>)
   }
 }
