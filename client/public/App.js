@@ -15,13 +15,15 @@ var sound10 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/
 var sound11 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/CL.mp3')
 var sound12 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/SH.mp3')
 
+const white = { bgColor: 'white' }
+
 class App extends Component {
   constructor(props) {
     super(props)
-    this.clicked = this.clicked.bind(this)
+    this.playNote = this.playNote.bind(this)
   }
 
-  clicked() {
+  playNote() {
     const audio = document.querySelectorAll('.notes')
     for(let i = 0; i < audio.length; i++) {
       audio[i].addEventListener('click', (event) => {
@@ -72,8 +74,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Pads />
-        <Indicator onClick={this.clicked}/>
+        <Pads onClick={this.playNote}/>
+        <Indicator onClick={this.playNote}/>
       </div>)
   }
 }
