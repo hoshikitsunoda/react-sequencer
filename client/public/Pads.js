@@ -1,7 +1,7 @@
 import React from 'react'
 import Pad from './Pad'
 
-const Pads = () => {
+const Pads = ({ onClick }) => {
   const row = ['c', 'd', 'e', 'f', 'g', 'a', 'b', 'kd', 'sd', 'hh', 'cl', 'sh']
   return (
     <div id="table">
