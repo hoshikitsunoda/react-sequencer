@@ -6,21 +6,22 @@ class Pad extends Component {
   constructor(props) {
     super(props)
     this.state = { active: false }
-    this.handleBgColorChange = this.handleBgColorChange.bind(this)
   }
 
-  handleBgColorChange() {
-    const currentState = this.state.active
-    this.setState({ active: !currentState })
+  handleBgColorChange(name, event) {
+    let currentState = this.state.active
+    currentState = {}
+    currentState[name] = this.state.active[name] == 'selected' ? null : 'selected'
+    this.setState({ active: currentState })
   }
 
   render() {
     return (
       <div>
         {list.map((id, index) => <button
-            onClick={this.handleBgColorChange}
-            className={this.state.active ? 'selected': null} key={index}>
-          </button>)}
+          onClick={this.handleBgColorChange.bind(this, `${id}`)}
+          className={this.state.active[`${id}`]} key={index}>
+        </button>)}
       </div>
     )
   }
