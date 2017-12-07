@@ -15,10 +15,8 @@ class PlayStop extends Component {
   render() {
     return (
       <div>
-        <button
-          id="playbutton"
-          className={this.state.class ? 'play' : 'stop'}
-          onClick={this.togglePlay}>
+        <button onClick={this.togglePlay} id="playbutton">
+          <i className={this.state.class ? 'fa fa-play-circle' : 'fa fa-stop-circle'}></i>
         </button>
       </div>
     )
