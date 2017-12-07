@@ -9,11 +9,11 @@ class SequenceIndicator extends Component {
 
   render() {
     return (
-      <ul>
+      <div>
         {list.map((id, index) => {
           return <button key={index} className="sequence-indicator" id={id + 'th'}></button>
         })}
-      </ul>
+      </div>
     )
   }
 }
