@@ -47,7 +47,7 @@ body {
 .notes {
   position: relative;
   top: -30px;
-  left: -20px;
+  left: -16px;
   width: 60%;
   height: 25px;
   float: left;
@@ -82,22 +82,22 @@ body {
 }
 
 .fa {
-  font-size: 5rem;
-  color: #5d2826;
+  position: relative;
+  left: 50%;
+  transform: translateX(-130%);
+  font-size: 4rem;
+  color: rgba(255, 0, 0, 0.6);
   opacity: 0.8;
-  text-shadow:
-    0 0 2px #fff,
-    0 0 5px rgba(255, 0, 0, 0.5),
-    inset #441313 0 -1px 9px;
   animation: neon1 1s ease-in-out infinite alternate;
 }
 
 .sequence-indicator {
   position: relative;
+  float: left;
   padding: 0.9%;
   border-radius: 50%;
   left: 6.9%;
-  top: 73px;
+  top: 10vh;
   margin-right: 4.3%;
   border: none;
   background-color: #743131;
@@ -160,8 +160,8 @@ body {
   position: absolute;
   margin: 0 auto;
   width: 15%;
-  height: 16%;
-  bottom: 10%;
+  height: 16.3%;
+  bottom: 15%;
   right: -28%;
   display: block;
   box-sizing: border-box;
@@ -180,10 +180,10 @@ body {
       0 0 2px #ff8f8a,
       0 0 4px #ff8f8a,
       0 0 6px #ff8f8a,
-      0 0 8px #ea6861,
-      0 0 10px #ea6861,
-      0 0 12px #ea6861,
-      0 0 14px #ea6861,
+      0 0 8px rgba(255, 0, 0, 0.5),
+      0 0 10px rgba(255, 0, 0, 0.5),
+      0 0 12px rgba(255, 0, 0, 0.5),
+      0 0 14px rgba(255, 0, 0, 0.5),
       0 0 20px #fff;
   }
 
@@ -192,10 +192,10 @@ body {
       0 0 1px #ff8f8a,
       0 0 2px #ff8f8a,
       0 0 3px #ff8f8a,
-      0 0 4px #ea6861,
-      0 0 5px #ea6861,
-      0 0 6px #ea6861,
-      0 0 7px #ea6861,
+      0 0 4px rgba(255, 0, 0, 0.5),
+      0 0 5px rgba(255, 0, 0, 0.5),
+      0 0 6px rgba(255, 0, 0, 0.5),
+      0 0 7px rgba(255, 0, 0, 0.5),
       0 0 10px #fff;
   }
 }
