@@ -78,11 +78,12 @@ body {
 
 .fa {
   font-size: 5rem;
-  color: #da4e4a;
+  color: #5d2826;
   opacity: 0.8;
   text-shadow:
     0 0 2px #fff,
-    0 0 5px #000;
+    0 0 5px rgba(255, 0, 0, 0.5),
+    inset #441313 0 -1px 9px;
   animation: neon1 1s ease-in-out infinite alternate;
 }
 
@@ -92,7 +93,13 @@ body {
   border-radius: 50%;
   left: 6.9%;
   top: 73px;
-  margin-right: 4%;
+  margin-right: 4.3%;
+  border: none;
+  background-color: #743131;
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0 -1px 7px 1px,
+    inset #441313 0 -1px 9px,
+    rgba(255, 0, 0, 0.5) 0 1px 6px;
 }
 
 #KD-note,
