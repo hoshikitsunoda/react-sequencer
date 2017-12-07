@@ -11,7 +11,7 @@ class SequenceIndicator extends Component {
     return (
       <ul>
         {list.map((id, index) => {
-          return <li key={index} className="sequence-indicator" id={id + 'th'}></li>
+          return <button key={index} className="sequence-indicator" id={id + 'th'}></button>
         })}
       </ul>
     )
