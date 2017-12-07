@@ -13,3 +13,5 @@ class PlayStop extends Component {
     )
   }
 }
+
+export default PlayStop
