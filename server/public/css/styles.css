@@ -21,6 +21,10 @@ body {
     10px 0 30px #8af8ff;
 }
 
+*:focus {
+  outline: none;
+}
+
 .buttonwrapper > button {
   cursor: pointer;
   margin: 0.5%;
@@ -71,9 +75,10 @@ body {
     4px 4px 2px #000;
 }
 
-.selected {
+.buttonwrapper > .selected {
   background-color: white;
   opacity: 0.7;
+  z-index: 1;
 }
 
 .fa {
@@ -99,7 +104,7 @@ body {
   box-shadow:
     rgba(0, 0, 0, 0.2) 0 -1px 7px 1px,
     inset #441313 0 -1px 9px,
-    rgba(255, 0, 0, 0.5) 0 1px 6px;
+    0 1px 6px rgba(255, 0, 0, 0.5);
 }
 
 #KD-note,
