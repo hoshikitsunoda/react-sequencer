@@ -18,7 +18,7 @@ class Pad extends Component {
 
   render() {
     return (
-      <div>
+      <div className="buttonwrapper">
         {list.map((id, index) => <button
           onClick={this.handleBgColorChange.bind(this, `${id}`)}
           className={this.state.active[`${id}`]} key={index}>

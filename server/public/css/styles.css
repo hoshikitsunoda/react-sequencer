@@ -21,7 +21,7 @@ body {
     10px 0 30px #8af8ff;
 }
 
-button {
+.buttonwrapper > button {
   cursor: pointer;
   margin: 0.5%;
   padding: 2%;
@@ -78,11 +78,28 @@ button {
 
 .fa {
   font-size: 5rem;
-  color: #da4e4a;
+  color: #5d2826;
+  opacity: 0.8;
   text-shadow:
     0 0 2px #fff,
-    0 0 5px #000;
+    0 0 5px rgba(255, 0, 0, 0.5),
+    inset #441313 0 -1px 9px;
   animation: neon1 1s ease-in-out infinite alternate;
+}
+
+.sequence-indicator {
+  position: relative;
+  padding: 0.9%;
+  border-radius: 50%;
+  left: 6.9%;
+  top: 73px;
+  margin-right: 4.3%;
+  border: none;
+  background-color: #743131;
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0 -1px 7px 1px,
+    inset #441313 0 -1px 9px,
+    rgba(255, 0, 0, 0.5) 0 1px 6px;
 }
 
 #KD-note,
@@ -97,20 +114,20 @@ button {
   position: relative;
   width: 100%;
   left: 9%;
-  top: 3%;
+  top: 7.5%;
 }
 
 #indicator {
   position: absolute;
   width: 6%;
   height: 80%;
-  top: 20%;
+  top: 22.2%;
 }
 
 #table {
   position: absolute;
   width: 110%;
-  height: 87%;
+  height: 91%;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -155,25 +172,25 @@ button {
 @keyframes neon1 {
   from {
     text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
+      0 0 2px #ff8f8a,
+      0 0 4px #ff8f8a,
+      0 0 6px #ff8f8a,
       0 0 8px #ea6861,
       0 0 10px #ea6861,
       0 0 12px #ea6861,
       0 0 14px #ea6861,
-      0 0 16px #ea6861;
+      0 0 20px #fff;
   }
 
   to {
     text-shadow:
-      0 0 1px #fff,
-      0 0 2px #fff,
-      0 0 3px #fff,
+      0 0 1px #ff8f8a,
+      0 0 2px #ff8f8a,
+      0 0 3px #ff8f8a,
       0 0 4px #ea6861,
       0 0 5px #ea6861,
       0 0 6px #ea6861,
       0 0 7px #ea6861,
-      0 0 8px #ea6861;
+      0 0 10px #fff;
   }
 }

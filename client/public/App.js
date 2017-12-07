@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Pads from './Pads'
 import Indicator from './Indicator'
 import PlayStop from './PlayStop'
+import SequenceIndicator from './SequenceIndicator'
 
 var sound1 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/C.mp3')
 var sound2 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/D.mp3')
@@ -78,6 +79,7 @@ class App extends Component {
         <Pads onClick={this.playNote}/>
         <Indicator onClick={this.playNote}/>
         <PlayStop />
+        <SequenceIndicator />
       </div>)
   }
 }
