@@ -13,6 +13,7 @@ class Pad extends Component {
     currentState = {}
     currentState[name] = this.state.active[name] == 'selected' ? null : 'selected'
     this.setState({ active: currentState })
+    event.preventDefault()
   }
 
   render() {

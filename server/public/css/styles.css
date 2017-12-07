@@ -2,6 +2,7 @@ html {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  font-size: 10px;
 }
 
 body {
@@ -75,6 +76,15 @@ button {
   opacity: 0.7;
 }
 
+.fa {
+  font-size: 5rem;
+  color: #da4e4a;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 5px #000;
+  animation: neon1 1s ease-in-out infinite alternate;
+}
+
 #KD-note,
 #SD-note,
 #HH-note,
@@ -122,4 +132,48 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#playbutton {
+  position: absolute;
+  margin: 0 auto;
+  width: 15%;
+  height: 16%;
+  bottom: 10%;
+  right: -28%;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #c6c8c8;
+  box-shadow:
+    inset 0 0 30px black,
+    0 0 10px #fff,
+    -5px 0 10px #fffbbf,
+    5px 0 10px #8af8ff;
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 8px #ea6861,
+      0 0 10px #ea6861,
+      0 0 12px #ea6861,
+      0 0 14px #ea6861,
+      0 0 16px #ea6861;
+  }
+
+  to {
+    text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 4px #ea6861,
+      0 0 5px #ea6861,
+      0 0 6px #ea6861,
+      0 0 7px #ea6861,
+      0 0 8px #ea6861;
+  }
 }
