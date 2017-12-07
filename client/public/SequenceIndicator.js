@@ -17,3 +17,5 @@ class SequenceIndicator extends Component {
     )
   }
 }
+
+export default SequenceIndicator
