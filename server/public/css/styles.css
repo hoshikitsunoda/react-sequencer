@@ -115,6 +115,10 @@ body {
   font-size: 15px;
 }
 
+#lit {
+  background-color: pink;
+}
+
 .rows {
   position: relative;
   width: 100%;
