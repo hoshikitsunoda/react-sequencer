@@ -79,7 +79,6 @@ class App extends Component {
         <Pads onClick={this.playNote}/>
         <Indicator onClick={this.playNote}/>
         <PlayStop />
-        <SequenceIndicator />
       </div>)
   }
 }
