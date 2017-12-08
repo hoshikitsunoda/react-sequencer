@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import SequenceIndicator from './SequenceIndicator'
 
+const stable = require('stable-timer')
+
 let steps
 
 class PlayStop extends Component {
