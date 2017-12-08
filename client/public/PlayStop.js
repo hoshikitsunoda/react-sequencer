@@ -30,7 +30,10 @@ class PlayStop extends Component {
   }
 
   stepper() {
-
+    const currentPosition = this.state.position
+    currentPosition !== 16
+      ? this.setState({ status: this.state.status, position: currentPosition + 1 })
+      : this.setState({ status: this.state.status, position: 1 })
     }
   }
 
