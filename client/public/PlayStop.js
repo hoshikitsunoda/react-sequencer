@@ -12,14 +12,8 @@ class PlayStop extends Component {
       started: false,
       position: 0
     }
-    // this.togglePlay = this.togglePlay.bind(this)
     this.start = this.start.bind(this)
   }
-
-  // togglePlay() {
-  //   const currentState = this.state.class
-  //   this.setState({ class: !currentState })
-  // }
 
   start() {
     const currentState = this.state.class
@@ -36,38 +30,11 @@ class PlayStop extends Component {
   }
 
   stepper() {
-    const currentPosition = this.state.position
-    currentPosition !== 16
-      ? this.setState({ status: this.state.status, position: currentPosition + 1 })
-      : this.setState({ status: this.state.status, position: 1 })
-    const indicator = document.querySelectorAll('.sequence-indicator')
-    for(let i = 0; i < currentPosition; i++) {
-      indicator[i].classList.add('lit')
-      setInterval(() => indicator[i].classList.remove('lit'), 500, false)
+
     }
-
-    // let currentStatus = this.state.status
-    // const currentPosition = this.state.position
-    // currentStatus[id] === 'lit'
-    //   ? currentStatus[id] = null
-    //   : currentStatus[id] = 'lit'
-    // currentPosition < 16
-    //   ? this.setState({ status: currentStatus, position: currentPosition + 1 })
-    //   : this.setState({ status: currentStatus, position: 1 })
-
-    // const currentPosition = this.state.position
-    // const litUp = (this.state.status === 'lit') ? 'null' : 'lit'
-    // if(this.state.position < 16) {
-    //   this.setState({ status: litUp, position: currentPosition + 1 })
-    // }
-    // else {
-    //   this.setState({ status: litUp, position: 1 })
-    // }
   }
 
   render() {
-    // console.log(this.state.position);
-    // console.log(this.state.status);
     return (
       <div>
         <SequenceIndicator
