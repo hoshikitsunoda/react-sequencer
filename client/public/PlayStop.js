@@ -35,6 +35,9 @@ class PlayStop extends Component {
       ? this.setState({ status: this.state.status, position: currentPosition + 1 })
       : this.setState({ status: this.state.status, position: 1 })
     const indicator = document.querySelectorAll('.sequence-indicator')
+    for(let i = 0; i < currentPosition; i++) {
+      indicator[i].classList.add('lit')
+      setInterval(() => indicator[i].classList.remove('lit'), 500, false)
     }
   }
 
