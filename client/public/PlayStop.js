@@ -34,6 +34,7 @@ class PlayStop extends Component {
     currentPosition !== 16
       ? this.setState({ status: this.state.status, position: currentPosition + 1 })
       : this.setState({ status: this.state.status, position: 1 })
+    const indicator = document.querySelectorAll('.sequence-indicator')
     }
   }
 
