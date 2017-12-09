@@ -3,6 +3,7 @@ import SequenceIndicator from './SequenceIndicator'
 
 const stable = require('stable-timer')
 let steps
+let location
 
 class PlayStop extends Component {
   constructor(props) {
@@ -39,16 +40,18 @@ class PlayStop extends Component {
     const currentPosition = this.state.position
     currentPosition <= 15
       ? this.setState({ status: true, position: currentPosition + 1 })
-      : this.setState({ position: 0 })
+      : this.setState({ position: 1 })
     if(this.state.started === true) {
       const indicator = document.querySelectorAll('.sequence-indicator')
       for(let i = 0; i < indicator.length; i++) {
         if(currentPosition.toString() === indicator[i].id) {
           indicator[i].classList.add('lit')
-          stable.setInterval(() => indicator[i].classList.remove('lit'), 250, false)
+          location = stable.setInterval(() => indicator[i].classList.remove('lit'), 260, false)
         }
       }
     }
+
+    const rows = document.querySelectorAll('.plays')
   }
 
   render() {
