@@ -18,21 +18,19 @@ class PlayStop extends Component {
   }
 
   start() {
-    console.log(steps);
     this.setState({ started: true })
-    steps = setInterval(() => this.stepper(), 250)
+    steps = stable.setInterval(() => this.stepper(), 250)
 
     const currentState = this.state.class
     this.setState({ class: !currentState })
   }
 
   stop() {
-    console.log(steps);
     this.setState({
       position: 0,
       started: false
     })
-    clearInterval(steps)
+    stable.clearInterval(steps)
   }
 
   stepper() {
@@ -45,14 +43,13 @@ class PlayStop extends Component {
       for(let i = 0; i < indicator.length; i++) {
         if(currentPosition.toString() === indicator[i].id) {
           indicator[i].classList.add('lit')
-          setInterval(() => indicator[i].classList.remove('lit'), 250, false)
+          stable.setInterval(() => indicator[i].classList.remove('lit'), 250, false)
         }
       }
     }
   }
 
   render() {
-    console.log(this.state.started);
     return (
       <div>
         <SequenceIndicator
