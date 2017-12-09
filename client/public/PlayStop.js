@@ -26,8 +26,10 @@ class PlayStop extends Component {
   }
 
   stop() {
+    const currentState = this.state.class
     this.setState({
       position: 0,
+      class: !currentState,
       started: false
     })
     stable.clearInterval(steps)
