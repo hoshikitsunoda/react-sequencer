@@ -66,6 +66,19 @@ class PlayStop extends Component {
     }
 
     const rows = document.querySelectorAll('.plays')
+
+    var $row1 = rows[currentCol]
+    var $row2 = rows[currentCol + 16]
+    var $row3 = rows[currentCol + 32]
+    var $row4 = rows[currentCol + 48]
+    var $row5 = rows[currentCol + 64]
+    var $row6 = rows[currentCol + 80]
+    var $row7 = rows[currentCol + 96]
+    var $row8 = rows[currentCol + 112]
+    var $row9 = rows[currentCol + 128]
+    var $row10 = rows[currentCol + 144]
+    var $row11 = rows[currentCol + 160]
+    var $row12 = rows[currentCol + 176]
   }
 
   render() {
