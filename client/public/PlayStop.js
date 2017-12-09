@@ -83,41 +83,53 @@ class PlayStop extends Component {
 
     if ($row1 !== undefined && $row1.classList.contains('selected')) {
       sound1.play()
+      sound1.currentTime = 0
     }
     if ($row2 !== undefined && $row2.classList.contains('selected')) {
       sound2.play()
+      sound2.currentTime = 0
     }
     if ($row3 !== undefined && $row3.classList.contains('selected')) {
       sound3.play()
+      sound3.currentTime = 0
     }
     if ($row4 !== undefined && $row4.classList.contains('selected')) {
       sound4.play()
+      sound4.currentTime = 0
     }
     if ($row5 !== undefined && $row5.classList.contains('selected')) {
       sound5.play()
+      sound5.currentTime = 0
     }
     if ($row6 !== undefined && $row6.classList.contains('selected')) {
       sound6.play()
+      sound6.currentTime = 0
     }
     if ($row7 !== undefined && $row7.classList.contains('selected')) {
       sound7.play()
+      sound7.currentTime = 0
     }
     if ($row8 !== undefined && $row8.classList.contains('selected')) {
       sound8.play()
+      sound8.currentTime = 0
     }
     if ($row9 !== undefined && $row9.classList.contains('selected')) {
       sound9.play()
+      sound9.currentTime = 0
     }
     if ($row10 !== undefined && $row10.classList.contains('selected')) {
       sound10.volume = 0.6
       sound10.play()
+      sound10.currentTime = 0
     }
     if ($row11 !== undefined && $row11.classList.contains('selected')) {
       sound11.play()
+      sound11.currentTime = 0
     }
     if ($row12 !== undefined && $row12.classList.contains('selected')) {
       sound12.volume = 0.3
       sound12.play()
+      sound2.currentTime = 0
     }
     if (currentCol === 15) {
       currentCol = 0
