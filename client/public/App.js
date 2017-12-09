@@ -75,11 +75,10 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div id="wrapper">
         <Pads onClick={this.playNote}/>
         <Indicator onClick={this.playNote}/>
         <PlayStop />
-        <SequenceIndicator />
       </div>)
   }
 }
