@@ -23,7 +23,7 @@ class Pads extends Component {
     return (
       <div id="table">
         {row.map((rowNum, index) => {
-          return (<div className="rows" key={rowNum} id={rowNum + '-row'}>
+          return (<div className="rows" key={rowNum} id={rowNum}>
             <Pad
               row={rowNum}
               activePads={this.state.activePads}

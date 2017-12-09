@@ -7,7 +7,8 @@ const Pad = ({ activePads, click, row }) => {
     <div className="buttonwrapper">
       {list.map((col, index) => <button
         onClick={() => click(`${row}-${col}`)}
-        className={activePads[`${row}-${col}`]}
+        className={'plays ' + activePads[`${row}-${col}`]}
+        id={row + '-row'}
         key={`${row}-${col}`}>
       </button>)}
     </div>
