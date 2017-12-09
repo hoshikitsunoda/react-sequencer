@@ -2,7 +2,7 @@ import React from 'react'
 
 const BpmMeter = () => {
   return (
-    <div>
+    <div id="bpmmeter">
       <h1>120</h1>
       <h2>.00</h2>
       <h3>BPM</h3>
