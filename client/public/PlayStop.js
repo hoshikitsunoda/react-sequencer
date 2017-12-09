@@ -108,12 +108,14 @@ class PlayStop extends Component {
       sound9.play()
     }
     if ($row10 !== undefined && $row10.classList.contains('selected')) {
+      sound10.volume = 0.6
       sound10.play()
     }
     if ($row11 !== undefined && $row11.classList.contains('selected')) {
       sound11.play()
     }
     if ($row12 !== undefined && $row12.classList.contains('selected')) {
+      sound12.volume = 0.3
       sound12.play()
     }
     if (currentCol === 15) {
