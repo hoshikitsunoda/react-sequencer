@@ -4,6 +4,7 @@ import SequenceIndicator from './SequenceIndicator'
 const stable = require('stable-timer')
 let steps
 let location
+let currentCol = 0
 
 var sound1 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/C.mp3')
 var sound2 = new Audio('/Users/hoshikitsunoda/react-drum-machine/server/public/sounds/synth/D.mp3')
