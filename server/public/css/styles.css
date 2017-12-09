@@ -115,8 +115,9 @@ body {
   font-size: 15px;
 }
 
-#lit {
+.lit {
   background-color: pink;
+  box-shadow: 0 0 5px white;
 }
 
 .rows {
