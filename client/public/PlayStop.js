@@ -41,6 +41,7 @@ class PlayStop extends Component {
   }
 
   stop() {
+    currentCol = 0
     const currentState = this.state.class
     this.setState({
       position: 0,
