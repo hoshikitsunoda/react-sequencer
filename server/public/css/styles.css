@@ -132,7 +132,7 @@ h3 {
   padding: 0.9%;
   border-radius: 50%;
   left: 6.9%;
-  top: 10vh;
+  top: 13vh;
   margin-right: 4.3%;
   border: none;
   background-color: #743131;
@@ -140,6 +140,17 @@ h3 {
     rgba(0, 0, 0, 0.2) 0 -1px 7px 1px,
     inset #441313 0 -1px 9px,
     0 1px 6px rgba(255, 0, 0, 0.5);
+}
+
+#title {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  font-size: 7.5rem;
+  text-shadow:
+    0 15px 5px rgba(0, 0, 0, 0.15),
+    10px 20px 5px rgba(0, 0, 0, 0.05),
+    -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 #KD-note,
@@ -166,14 +177,14 @@ h3 {
   position: absolute;
   width: 6%;
   height: 80%;
-  top: 22.2%;
+  top: 26%;
 }
 
 #table {
   position: absolute;
   width: 110%;
   height: 91%;
-  top: 55%;
+  top: 58.8%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(42, 42, 42, 0.6);
@@ -217,7 +228,7 @@ h3 {
 #bpmmeter {
   position: absolute;
   border: 2px groove rgba(152, 152, 152, 0.1);
-  bottom: -3%;
+  bottom: -5%;
   right: -45%;
   width: 33%;
   height: 14%;
