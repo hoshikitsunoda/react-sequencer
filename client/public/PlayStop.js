@@ -116,6 +116,11 @@ class PlayStop extends Component {
     if ($row12 !== undefined && $row12.classList.contains('selected')) {
       sound12.play()
     }
+    if (currentCol === 15) {
+      currentCol = 0
+    } else {
+      currentCol++
+    }
   }
 
   render() {
