@@ -9,3 +9,5 @@ const BpmMeter = () => {
     </div>
   )
 }
+
+export default BpmMeter
