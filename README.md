@@ -1,9 +1,9 @@
 # react-sequencer
-Recreating a drum machine project with React.
+A web application to for musicians who want to easily create musical sequences.
 # Usage
 ```
 npm run bundle:watch
-open index.html
+then, open index.html
 ```
 # Use
 * HTML5
