@@ -81,28 +81,40 @@ class PlayStop extends Component {
     var $row12 = rows[currentCol + 176]
 
     if ($row1 !== undefined && $row1.classList.contains('selected')) {
+      sound1.play()
     }
     if ($row2 !== undefined && $row2.classList.contains('selected')) {
+      sound2.play()
     }
     if ($row3 !== undefined && $row3.classList.contains('selected')) {
+      sound3.play()
     }
     if ($row4 !== undefined && $row4.classList.contains('selected')) {
+      sound4.play()
     }
     if ($row5 !== undefined && $row5.classList.contains('selected')) {
+      sound5.play()
     }
     if ($row6 !== undefined && $row6.classList.contains('selected')) {
+      sound6.play()
     }
     if ($row7 !== undefined && $row7.classList.contains('selected')) {
+      sound7.play()
     }
     if ($row8 !== undefined && $row8.classList.contains('selected')) {
+      sound8.play()
     }
     if ($row9 !== undefined && $row9.classList.contains('selected')) {
+      sound9.play()
     }
     if ($row10 !== undefined && $row10.classList.contains('selected')) {
+      sound10.play()
     }
     if ($row11 !== undefined && $row11.classList.contains('selected')) {
+      sound11.play()
     }
     if ($row12 !== undefined && $row12.classList.contains('selected')) {
+      sound12.play()
     }
   }
 
