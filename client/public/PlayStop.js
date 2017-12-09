@@ -79,6 +79,31 @@ class PlayStop extends Component {
     var $row10 = rows[currentCol + 144]
     var $row11 = rows[currentCol + 160]
     var $row12 = rows[currentCol + 176]
+
+    if ($row1 !== undefined && $row1.classList.contains('selected')) {
+    }
+    if ($row2 !== undefined && $row2.classList.contains('selected')) {
+    }
+    if ($row3 !== undefined && $row3.classList.contains('selected')) {
+    }
+    if ($row4 !== undefined && $row4.classList.contains('selected')) {
+    }
+    if ($row5 !== undefined && $row5.classList.contains('selected')) {
+    }
+    if ($row6 !== undefined && $row6.classList.contains('selected')) {
+    }
+    if ($row7 !== undefined && $row7.classList.contains('selected')) {
+    }
+    if ($row8 !== undefined && $row8.classList.contains('selected')) {
+    }
+    if ($row9 !== undefined && $row9.classList.contains('selected')) {
+    }
+    if ($row10 !== undefined && $row10.classList.contains('selected')) {
+    }
+    if ($row11 !== undefined && $row11.classList.contains('selected')) {
+    }
+    if ($row12 !== undefined && $row12.classList.contains('selected')) {
+    }
   }
 
   render() {
