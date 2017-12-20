@@ -1,13 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const BpmMeter = () => {
-  return (
-    <div id="bpmmeter">
-      <h1>120</h1>
-      <h2>.00</h2>
-      <h3>BPM</h3>
-    </div>
-  )
+class BpmMeter extends Component {
+  
 }
 
 export default BpmMeter
