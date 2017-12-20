@@ -35,12 +35,26 @@ input {
 }
 
 input {
-  font-size: 6.3rem;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 5.3rem;
   letter-spacing: 2px;
-  top: 25%;
-  left: 3%;
-  width: 50%;
+  padding-top: 10px;
+  top: 90%;
+  left: 110%;
+  width: 35%;
   transform: scale(1, 1.1);
+  position: absolute;
+  border: 2px groove rgba(152, 152, 152, 0.1);
+  bottom: -5%;
+  right: -45%;
+  box-shadow:
+    inset 0 0 10px black,
+    inset 0 0 60px grey,
+    0 0 30px #fff,
+    -10px 0 30px #fffbbf,
+    10px 0 30px #8af8ff;
+  border-radius: 5px;
 }
 
 /*h1,
@@ -236,7 +250,7 @@ h3 {
     5px 0 10px #8af8ff;
 }
 
-#bpmmeter {
+/*#bpmmeter {
   position: absolute;
   border: 2px groove rgba(152, 152, 152, 0.1);
   bottom: -5%;
@@ -250,7 +264,7 @@ h3 {
     -10px 0 30px #fffbbf,
     10px 0 30px #8af8ff;
   border-radius: 5px;
-}
+}*/
 
 @keyframes neon1 {
   from {
