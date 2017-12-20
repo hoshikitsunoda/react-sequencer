@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 class BpmMeter extends Component {
-  constructor() {
-    
+  constructor(props) {
+    super(props)
   }
 
   render() {
