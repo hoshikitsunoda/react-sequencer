@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 class BpmMeter extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      bpm: 250
+    }
   }
 
   render() {
