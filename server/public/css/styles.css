@@ -57,6 +57,10 @@ input {
   border-radius: 5px;
 }
 
+::-webkit-input-placeholder {
+  color: #da4e4a;
+}
+
 /*h1,
 input {
   font-size: 6.3rem;
