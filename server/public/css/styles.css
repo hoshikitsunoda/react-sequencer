@@ -24,7 +24,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+input {
   position: relative;
   float: left;
   margin: 0 auto;
@@ -33,7 +34,17 @@ h3 {
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-h1 {
+input {
+  font-size: 6.3rem;
+  letter-spacing: 2px;
+  top: 25%;
+  left: 3%;
+  width: 50%;
+  transform: scale(1, 1.1);
+}
+
+/*h1,
+input {
   font-size: 6.3rem;
   letter-spacing: 2px;
   top: 25%;
@@ -54,7 +65,7 @@ h3 {
   letter-spacing: 7px;
   left: 14%;
   top: -22%;
-}
+}*/
 
 *:focus {
   outline: none;
