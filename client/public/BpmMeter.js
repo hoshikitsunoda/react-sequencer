@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const BpmMeter = () => {
-  return (
-    <div id="bpmmeter">
-      <h1>120</h1>
-      <h2>.00</h2>
-      <h3>BPM</h3>
-    </div>
-  )
+class BpmMeter extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      bpm: 250
+    }
+  }
+
+  render() {
+    return (
+      <div id="bpmmeter">
+        <form>
+          <input type="text" placeholder="120.00"/>
+        </form>
+      </div>
+    )
+  }
 }
 
 export default BpmMeter
