@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 class BpmMeter extends Component {
+  constructor() {
+    
+  }
+
   render() {
     return (
       <div id="bpmmeter">
