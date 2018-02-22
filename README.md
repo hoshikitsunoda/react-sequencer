@@ -3,7 +3,7 @@ A web application to for musicians who want to easily create musical sequences.
 # Usage
 ```
 npm run bundle:watch
-then, open index.html
+index.html
 ```
 # Use
 * HTML5
